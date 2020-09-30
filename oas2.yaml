@@ -44,7 +44,10 @@ paths:
                 type: integer
               name:
                 type: string
-              completed: 
+              nickname:
+                type: string
+                x-nullable: true
+              completed:
                 type: boolean
               completed_at:
                 type: string
@@ -57,6 +60,7 @@ paths:
             example:
               id: 1
               name: get food
+              nickname:
               completed: false
               completed_at: '1955-04-23T13:22:52.685Z'
         '500':
